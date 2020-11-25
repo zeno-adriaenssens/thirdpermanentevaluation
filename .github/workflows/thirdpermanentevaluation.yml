@@ -27,5 +27,5 @@ jobs:
           username: ${{ secrets.username }}
           password: ${{ secrets.password }}
           repository: belgiumbulldog/thirdpermanentevaluation
-          tag_with_ref: latest
+          tag_with_ref: true
 
