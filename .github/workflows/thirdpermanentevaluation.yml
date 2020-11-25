@@ -24,8 +24,8 @@ jobs:
       - name: Push to Docker Hub
         uses: docker/build-push-action@v1
         with:
-          username: ${{ secrets.thirdpermanentevaluation }}
-          password: ${{ secrets.thirdpermanentevaluation }}
+          username: ${{ secrets.username }}
+          password: ${{ secrets.password }}
           repository: belgiumbulldog/thirdpermanentevaluation
           tag_with_ref: true
 
