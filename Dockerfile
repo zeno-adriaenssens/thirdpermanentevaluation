@@ -6,3 +6,4 @@ RUN mvn -f /usr/src/myapp/pom.xml package
 From tomcat:7.0
 COPY --from=BUILD /usr/src/myapp/target/project.war /usr/local/tomcat/webapp/project.war
 EXPOSE 8080
+ 
