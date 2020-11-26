@@ -6,5 +6,5 @@ COPY pom.xml /usr/src/myapp
 # RUN mvn -f /usr/src/myapp/pom.xml package
 
 From tomcat:7.0
-COPY --from=BUILD /usr/src/myapp/target/project-ucll.war /usr/local/tomcat/webapps/project-ucll.war
+COPY --from=BUILD /usr/src/myapp/src/project-ucll.war /usr/local/tomcat/webapps/project-ucll.war
 EXPOSE 8080
