@@ -8,7 +8,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-
+  
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2
@@ -27,4 +27,4 @@ jobs:
           username: ${{ secrets.username }}
           password: ${{ secrets.password }}
           repository: belgiumbulldog/thirdpermanentevaluation
-          tag_with_ref: true
+          tags: dev
